@@ -11,12 +11,9 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 
 import java.util.Collections;
+import java.util.Date;
 import java.util.List;
 
-/*
- * added by dongxl6
- * enable swagger-ui
- */
 @Configuration
 public class SwaggerDocumentationConfig {
 
@@ -38,8 +35,8 @@ public class SwaggerDocumentationConfig {
                 .select()
                     .apis(RequestHandlerSelectors.basePackage("org.word.controller"))
                     .build()
-                .directModelSubstitute(org.joda.time.LocalDate.class, java.sql.Date.class)
-                .directModelSubstitute(org.joda.time.DateTime.class, java.util.Date.class)
+                .directModelSubstitute(Date.class, java.sql.Date.class)
+                .directModelSubstitute(Date.class, java.util.Date.class)
                 .apiInfo(apiInfo());
     }
 

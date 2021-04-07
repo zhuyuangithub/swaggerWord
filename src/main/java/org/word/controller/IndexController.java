@@ -12,11 +12,6 @@ import springfox.documentation.annotations.ApiIgnore;
 
 import javax.servlet.http.HttpServletRequest;
 
-/**
- * @author xiuyin.cui
- * @Description
- * @date 2019/3/22 10:52
- */
 @Controller
 public class IndexController {
     @ApiIgnore

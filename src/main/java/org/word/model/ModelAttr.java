@@ -7,11 +7,6 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * 返回属性
- *
- * @author kevin
- */
 @Data
 public class ModelAttr implements Serializable {
 

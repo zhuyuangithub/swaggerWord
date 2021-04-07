@@ -24,7 +24,6 @@ import java.util.stream.Collectors;
  * @Author XiuYin.Cui
  * @Date 2018/1/12
  **/
-@SuppressWarnings({"unchecked", "rawtypes"})
 @Slf4j
 @Service
 public class WordServiceImpl implements WordService {

@@ -17,9 +17,7 @@ import java.security.KeyStoreException;
 import java.security.NoSuchAlgorithmException;
 import java.security.cert.X509Certificate;
 
-/**
- * Created by XiuYin.Cui on 2018/6/21.
- */
+
 @Configuration
 public class JavaConfig {
 

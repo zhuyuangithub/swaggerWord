@@ -22,9 +22,6 @@ import java.io.IOException;
 import java.net.URLEncoder;
 import java.util.Map;
 
-/**
- * Created by XiuYin.Cui on 2018/1/11.
- */
 @Controller
 @Api(tags = "the toWord API")
 public class WordController {
@@ -62,6 +59,7 @@ public class WordController {
         Map<String, Object> result = tableService.tableList(url);
         model.addAttribute("url", url);
         model.addAttribute("download", download);
+        model.addAttribute("version", 1.0);
         model.addAllAttributes(result);
     }
 
